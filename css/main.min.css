@@ -1,0 +1,230 @@
+@charset "UTF-8";
+@font-face {
+  font-family: "SFUIDisplayBold";
+  src: url(/fonts/SFUIDisplay-Bold.otf); }
+
+@font-face {
+  font-family: "SFUIDisplayRegular";
+  src: url(/fonts/SFUIDisplay-Regular.otf); }
+
+@font-face {
+  font-family: "SFUIDisplayMedium";
+  src: url(/fonts/SFUIDisplay-Medium.otf); }
+
+@font-face {
+  font-family: "SFUIDisplayHeavy";
+  src: url(/fonts/SFUIDisplay-Heavy.otf); }
+
+img {
+  max-width: 100%; }
+
+a {
+  color: #242424; }
+
+dl, ol, ul, p {
+  margin: 0;
+  padding: 0; }
+
+p {
+  margin-bottom: 10px; }
+
+@-webkit-keyframes fadeInLeft {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(-70%, 0, 0);
+            transform: translate3d(-70%, 0, 0); }
+  100% {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0); } }
+
+@keyframes fadeInLeft {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(-70%, 0, 0);
+            transform: translate3d(-70%, 0, 0); }
+  100% {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0); } }
+
+@-webkit-keyframes fadeOutLeft {
+  0% {
+    opacity: 1; }
+  100% {
+    opacity: 0;
+    -webkit-transform: translate3d(-70%, 0, 0);
+    transform: translate3d(-70%, 0, 0); } }
+
+@keyframes fadeOutLeft {
+  0% {
+    opacity: 1; }
+  100% {
+    opacity: 0;
+    -webkit-transform: translate3d(-70%, 0, 0);
+    transform: translate3d(-70%, 0, 0); } }
+
+.animated {
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both; }
+
+.fadeInLeft {
+  -webkit-animation-name: fadeInLeft;
+          animation-name: fadeInLeft; }
+
+.fadeOutLeft {
+  -webkit-animation-name: fadeOutLeft;
+          animation-name: fadeOutLeft; }
+
+.card-started {
+  position: relative;
+  float: left;
+  width: 480px;
+  height: 100%;
+  z-index: 11;
+  border-radius: 4px;
+  border: 1px solid; }
+
+.card-inner {
+  border: 1px solid red;
+  background: rgba(0, 84, 222, 0.48);
+  padding: 0;
+  position: absolute;
+  overflow: hidden;
+  left: 560px;
+  right: 0;
+  top: 15px;
+  bottom: 15px;
+  width: auto;
+  height: auto;
+  -webkit-transform-origin: center left;
+          transform-origin: center left;
+  opacity: 0;
+  visibility: hidden;
+  z-index: 8;
+  border-radius: 4px;
+  -webkit-transition: visibility 1s linear,opacity 0s linear;
+  transition: visibility 1s linear,opacity 0s linear; }
+  .card-inner.animated {
+    opacity: 1;
+    visibility: visible;
+    z-index: 9; }
+  .card-inner.active {
+    opacity: 1;
+    visibility: visible;
+    z-index: 10; }
+  .card-inner.hidden {
+    opacity: 0;
+    visibility: hidden;
+    z-index: 9; }
+
+html[lang="bg-BG"] body, html[lang="bg-BG"] button, html[lang="bg-BG"] input, html[lang="bg-BG"] select, html[lang="bg-BG"] textarea, html[lang="ru-RU"] body, html[lang="ru-RU"] button, html[lang="ru-RU"] input, html[lang="ru-RU"] select, html[lang="ru-RU"] textarea, html[lang="uk"] body, html[lang="uk"] button, html[lang="uk"] input, html[lang="uk"] select, html[lang="uk"] textarea {
+  font-family: 'SFUIDisplayRegular'; }
+
+html {
+  font-size: 15px; }
+
+body {
+  font-family: 'SFUIDisplayRegular' !important;
+  font-size: 15px;
+  background: #f7f8fb; }
+
+.page_wrap {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+
+.container {
+  margin: 8vh 6vw;
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 84vh;
+  max-width: 1268px;
+  max-height: 674px;
+  transition: all .4s ease 0s;
+  -moz-transition: all .4s ease 0s;
+  -webkit-transition: all .4s ease 0s;
+  -o-transition: all .4s ease 0s; }
+
+.header {
+  margin-right: 8px;
+  position: relative;
+  left: 0;
+  top: 15px;
+  float: left;
+  width: 72px;
+  z-index: 100;
+  text-align: center;
+  opacity: 1;
+  visibility: visible;
+  border-radius: 4px;
+  border: 1px solid black; }
+  .header .top-menu {
+    width: 100%; }
+
+/*Десктопы и ноутбуки >1300*/
+/*Нетбуки, ноутбуки и планшеті альбомной ориентации 992px...1200px*/
+/*Планшеты 7> в портретной ориентации и планшеты 7 в альбомной ориентации 768-991px*/
+/*Планшеты 7 в портретной ориентации и планшеты и телефоны <7 в альбомной ориентации 577-767*/
+/*Все мобильные телефоны в портретной ориентации и альбомной ориентации*/
+/*Только если сильно нужно для моб. телефонов 320X*/
+@media (max-width: 1199px) {
+  .card-inner {
+    position: relative;
+    margin: 15px 0;
+    left: 0;
+    top: 0;
+    width: auto;
+    height: auto;
+    opacity: 1;
+    visibility: visible;
+    border-radius: 4px; } }
+
+@media (max-width: 1199px) {
+  .container {
+    margin: 0 auto;
+    padding: 0 15px 0 100px;
+    position: relative;
+    top: 20px;
+    left: 0;
+    width: auto;
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 700px;
+    max-height: initial;
+    height: auto;
+    -webkit-transform: none;
+            transform: none; } }
+
+@media (max-width: 1199px) {
+  .card-started {
+    position: relative;
+    float: none;
+    width: auto;
+    height: auto; } }
+
+@media (max-height: 740px) {
+  .container {
+    margin-top: 6vh;
+    margin-bottom: 6vh;
+    height: 88vh; } }
+
+@media (max-height: 700px) {
+  .container {
+    margin-top: 3vh;
+    margin-bottom: 3vh;
+    height: 94vh; } }

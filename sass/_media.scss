@@ -1,0 +1,84 @@
+//=======================================================OPTIONS START====================================================
+/*Десктопы и ноутбуки >1300*/
+/*Нетбуки, ноутбуки и планшеті альбомной ориентации 992px...1200px*/
+
+@media (max-width: 1200px) {
+
+}
+
+/*Планшеты 7> в портретной ориентации и планшеты 7 в альбомной ориентации 768-991px*/
+@media (max-width: 991px) {
+
+}
+
+/*Планшеты 7 в портретной ориентации и планшеты и телефоны <7 в альбомной ориентации 577-767*/
+@media (max-width: 767px) {
+
+}
+
+/*Все мобильные телефоны в портретной ориентации и альбомной ориентации*/
+@media (max-width: 576px) {
+
+}
+
+/*Только если сильно нужно для моб. телефонов 320X*/
+@media (max-width: 479px) {
+
+}
+
+@media (max-width: 1199px) {
+  .card-inner {
+    position: relative;
+    margin: 15px 0;
+    left: 0;
+    top: 0;
+    width: auto;
+    height: auto;
+    opacity: 1;
+    visibility: visible;
+    border-radius: 4px;
+  }
+}
+
+@media (max-width: 1199px) {
+  .container {
+    margin: 0 auto;
+    padding: 0 15px 0 100px;
+    position: relative;
+    top: 20px;
+    left: 0;
+    width: auto;
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 700px;
+    max-height: initial;
+    height: auto;
+    transform: none;
+  }
+}
+
+@media (max-width: 1199px) {
+  .card-started {
+    position: relative;
+    float: none;
+    width: auto;
+    height: auto;
+  }
+}
+
+@media (max-height: 740px) {
+  .container {
+    margin-top: 6vh;
+    margin-bottom: 6vh;
+    height: 88vh;
+  }
+}
+
+@media (max-height: 700px) {
+  .container {
+    margin-top: 3vh;
+    margin-bottom: 3vh;
+    height: 94vh;
+  }
+}

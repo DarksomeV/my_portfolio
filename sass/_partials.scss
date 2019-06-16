@@ -1,0 +1,50 @@
+$white:#fff;
+$defaultTitle:#00357b;
+$defaultText:#242424;
+$lightBg:#f7f8fb;
+$btnBuy:#fe4242;
+$btnContact:#ffca14;
+$productSelect:#f7c316;
+$btnReview:#879ee4;
+$selected:#878787;
+$subCat: #686868;
+$footerColor: #e8ecf6;
+$borderLight: #d9d9d9;
+
+
+@font-face {
+  font-family: "SFUIDisplayBold";
+  src: url(/fonts/SFUIDisplay-Bold.otf);
+  }
+
+@font-face {
+  font-family: "SFUIDisplayRegular";
+  src: url(/fonts/SFUIDisplay-Regular.otf);
+  }
+
+@font-face {
+  font-family: "SFUIDisplayMedium";
+  src: url(/fonts/SFUIDisplay-Medium.otf);
+  }
+
+@font-face {
+  font-family: "SFUIDisplayHeavy";
+  src: url(/fonts/SFUIDisplay-Heavy.otf);
+  }
+
+img{
+  max-width: 100%;
+}
+
+a{
+  color: $defaultText;
+}
+
+dl, ol, ul, p{
+  margin: 0;
+  padding: 0;
+}
+
+p{
+  margin-bottom: 10px;
+}
