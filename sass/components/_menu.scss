@@ -1,0 +1,71 @@
+.header {
+  margin-right: 27px;
+  position: relative;
+  left: 0;
+  float: left;
+  width: 72px;
+  z-index: 100;
+  text-align: center;
+  opacity: 1;
+  visibility: visible;
+  .menu-btn{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+    font-size: 0.8rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    border-radius: 4px;
+    color: $white;
+    background: $backgroundCard;
+    padding: 12px;
+    span + span{
+      margin-top: 9px;
+    }
+  }
+
+  .top-menu {
+    border-radius: 4px;
+    background: $backgroundCard;
+    margin-top: 8px;
+    width: 100%;
+  }
+}
+
+
+.menu-main-menu-container{
+  .menu{
+    list-style: none;
+    padding: 8px 10px;
+    li{
+      a{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        font-family: 'Raleway', sans-serif;
+        font-weight: 600;
+        font-size: 0.8rem;
+        text-decoration: none;
+        text-transform: uppercase;
+        color: $white;
+        span + span{
+          margin-top: 9px;
+        }
+      }
+
+      &:first-child, &:last-child{
+        padding: 20px 0px;
+      }
+
+      &.middle{
+        padding: 10px 0px;
+        border-bottom: 1px solid rgba(255,255,255, .05);
+        border-top: 1px solid rgba(255,255,255, .05);
+      }
+    }
+  }
+}

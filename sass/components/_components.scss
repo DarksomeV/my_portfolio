@@ -8,9 +8,10 @@ html{
 
 
 body{
+  margin: 0;
   font-family: 'SFUIDisplayRegular' !important;
   font-size: 15px;
-  background: $lightBg;
+  background: $background;
 }
 
 .page_wrap {
@@ -38,20 +39,4 @@ body{
   -o-transition: all .4s ease 0s;
 }
 
-.header {
-  margin-right: 8px;
-  position: relative;
-  left: 0;
-  top: 15px;
-  float: left;
-  width: 72px;
-  z-index: 100;
-  text-align: center;
-  opacity: 1;
-  visibility: visible;
-  border-radius: 4px;
-  border: 1px solid black;
-  .top-menu {
-    width: 100%;
-  }
-}
+

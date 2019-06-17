@@ -82,3 +82,18 @@
     height: 94vh;
   }
 }
+
+@media (max-width: 1199px) {
+  .header {
+    margin-left: -85px;
+    position: fixed;
+    left: auto;
+    top: 20px;
+    width: 72px;
+    max-width: 72px;
+    height: auto;
+    display: block;
+    background: #fff;
+    box-shadow: 0 0 25px rgba(0, 0, 0, .05);
+  }
+}

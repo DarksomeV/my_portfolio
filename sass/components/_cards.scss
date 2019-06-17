@@ -4,13 +4,110 @@
   width: 480px;
   height: 100%;
   z-index: 11;
-  border-radius: 4px;
-  border: 1px solid;
+  .profile{
+    height: 100%;
+    background: $backgroundCard;
+    border-radius: 5px;
+    .title{
+      margin-top: 2rem;
+      font-size: 2rem;
+      text-transform: uppercase;
+      color: $white;
+      font-family: 'Raleway', sans-serif;
+      font-weight: 800;
+    }
+    .subtitle{
+      font-size: 1.06rem;
+      color: $mainTheme;
+      text-transform: uppercase;
+      font-family: 'Roboto', sans-serif;
+    }
+    .social{
+
+      margin-top: 2rem;
+      a{
+        color: $lightGrey;
+        font-size: 20px;
+      }
+      a+a{
+        margin-left: 1rem;
+      }
+    }
+    .lnks {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 70px;
+      display: flex;
+      flex-direction: row;
+      z-index: 10;
+      .lnk{
+        position: relative;
+        display: block;
+        width: 100%;
+        height: 70px;
+        line-height: 70px;
+        font-size: 14px;
+        color: $white;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 400;
+        text-align: center;
+        text-decoration: none;
+        text-transform: uppercase;
+        border: none;
+      }
+    }
+    .lnks:before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 1px;
+      background: radial-gradient(ellipse at center,#3c3c44 0%,#3c3c44 70%);
+    }
+    .lnk:before, .button:before {
+      content: '';
+      position: absolute;
+      right: 0;
+      top: 0;
+      width: 1px;
+      height: 100%;
+      background: radial-gradient(ellipse at top,#3c3c44 0%,#3c3c44 70%);
+    }
+    .lnk + .lnk:before{
+      display: none;
+    }
+    &-content{
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 2rem;
+    }
+
+    &__avatar{
+      max-height: 50%;
+      padding: 2rem;
+      figure{
+        width: 150px;
+        height: 150px;
+        background: #1eff00;
+        overflow: hidden;
+        /* Rotate */
+        transform: rotate(-45deg);
+        box-shadow: 0 0 0 10px $backgroundCard, 0 0 0 13px $white;
+        img{
+          transform: rotate(45deg) scale(1.5);
+        }
+      }
+    }
+  }
 }
 
 .card-inner {
-  border: 1px solid red;
-  background: rgba(0, 84, 222, 0.48);
+  background: $backgroundCard;
   padding: 0;
   position: absolute;
   overflow: hidden;
@@ -20,12 +117,11 @@
   bottom: 15px;
   width: auto;
   height: auto;
-  //background: #fff;
   transform-origin: center left;
   opacity: 0;
   visibility: hidden;
   z-index: 8;
-  border-radius: 4px;
+  border-radius: 5px;
   transition: visibility 1s linear,opacity 0s linear;
   &.animated {
     opacity: 1;
