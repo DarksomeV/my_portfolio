@@ -1,10 +1,13 @@
 @import 'mixins';
 @import 'partials';
 
+@import "components/components";
+
+@import "components/progress";
 @import "components/animations";
 @import "components/cards";
 @import "components/menu";
-@import "components/components";
+@import "components/content";
 
 @import 'media';
 

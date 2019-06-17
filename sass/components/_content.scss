@@ -1,0 +1,152 @@
+.border-line-h, .title, .subtitle{
+  position: relative;
+  padding-bottom: 0.6rem;
+  &:after{
+    content: '';
+    position: absolute;
+    left: -4rem;
+    right: -2rem;
+    bottom: 0;
+    height: 1px;
+    background: rgba(255,255,255, .05);
+  }
+}
+
+
+.card-inner{
+  &:before, &:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 30px;
+    background: $backgroundCard;
+    z-index: 10;
+  }
+  .card-wrap {
+    padding: 2rem 2rem 0 4rem;
+    position: relative;
+    overflow: auto;
+    width: auto;
+    height: 100%;
+    outline: none;
+  }
+}
+
+.card-content{
+  font-family: 'Roboto', sans-serif;
+  color: $white;
+  font-size: 1.06rem;
+  .subtitle{
+    margin-top: 4rem;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
+  }
+  .title{
+    color: $mainTheme;
+    text-transform: uppercase;
+    position: relative;
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.6rem;
+    font-weight: 800;
+
+  }
+  .row{
+    padding: 0.66rem 0;
+  }
+}
+
+.row.services{
+  padding-top: 40px;
+}
+
+.service{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  &-icon{
+    max-width: 50px;
+    height: auto;
+    margin-bottom: 1.7rem;
+  }
+  &-name{
+    font-weight: bold;
+  }
+}
+
+.hobby{
+  padding: 2rem 2rem;
+  padding-right: 5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  &-icon{
+    font-size: 50px;
+    color: $mainTheme;
+  }
+  &-name{
+    font-weight: bold;
+  }
+}
+
+
+.expierence{
+  &-item{
+    padding-left: 2.4rem;
+    margin-top: 1.2rem;
+    &__title{
+      color: $mainTheme;
+      position: relative;
+      &:before{
+        content: '';
+        position: absolute;
+        left: -2rem;
+        top: 5px;
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        background: $mainTheme;
+      }
+    }
+
+    &__institution{
+      margin: 1rem 0;
+    }
+  }
+}
+
+.flex-skills{
+  display: flex;
+  .skills{
+    flex: 5;
+  }
+  .another-skills{
+    flex: 2;
+    p{
+      height: 55px;
+      display: flex;
+      align-items: flex-end;
+      margin-bottom: 0;
+      color: $lightFont;
+    }
+  }
+}
+
+.skill{
+  display: flex;
+  align-items: flex-end;
+  &-name{
+    width: 75px;
+    margin-top: 4px;
+    color: $lightFont;
+  }
+  .track-progress{
+    padding-left: 2rem;
+    width: calc(100% - 75px);
+  }
+}

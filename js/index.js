@@ -1,10 +1,16 @@
 (function ($) {
+    new WOW().init();
     var card_items = $('.card-inner');
     var animation_in = 'fadeInLeft';
     var animation_out = 'fadeOutLeft';
     var menu_items = $('.top-menu li');
     var container = $('.container');
     var width = $(window).width();
+
+    if (width > 1200) {
+        $('.card-inner .card-wrap').slimScroll({height: '100%'});
+        // $('.content-sidebar .sidebar-wrap, .profile .main-menu-fixed .main-menu').slimScroll({height: '100%'});
+    }
 
     $('.top-menu').on('click', 'a', function () {
         var id = $(this).attr('href');
@@ -69,7 +75,7 @@
         } else {
             var current_id = $('.top-menu li.current-menu-item a').attr('href');
             $('#card-' + current_id.replace('#', '')).addClass('current-menu-item');
-            // $('.card-inner .card-wrap').slimScroll({height: '100%'});
+            $('.card-inner .card-wrap').slimScroll({height: '100%'});
         }
     });
 })(jQuery);

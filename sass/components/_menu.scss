@@ -22,6 +22,9 @@
     color: $white;
     background: $backgroundCard;
     padding: 12px;
+    span:first-child{
+      font-size: 25px;
+    }
     span + span{
       margin-top: 9px;
     }
@@ -52,6 +55,9 @@
         text-decoration: none;
         text-transform: uppercase;
         color: $white;
+        span:first-child{
+          font-size: 25px;
+        }
         span + span{
           margin-top: 9px;
         }

@@ -3,6 +3,7 @@ $backgroundCard: #31313a;
 $mainTheme: #f08808;
 $white: #fff;
 $lightGrey: #878787;
+$lightFont: #d1d1d2;
 
 
 @import url('https://fonts.googleapis.com/css?family=Raleway:600,800|Roboto:400,700&display=swap&subset=cyrillic');
@@ -49,4 +50,26 @@ dl, ol, ul, p{
 
 p{
   margin-bottom: 10px;
+}
+
+.text-bold{
+  font-weight: bold;
+}
+
+.text-uppercase{
+  text-transform: uppercase;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  .col-12{
+    width: 100%;
+  }
+  .col-6 {
+    width: 50%;
+  }
+  .col-4{
+    width: 33.3%;
+  }
 }
